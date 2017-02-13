@@ -6,7 +6,7 @@
   <Image>Images\DataPAL.png</Image>
   <Author>Chris Robertson</Author>
   <Company>EPC</Company>
-  <Date>5/3/2016</Date>
+  <Date>2/13/2017</Date>
   <Targets>
     <Target name="Desktop" version="10.3" />
   </Targets>
@@ -15,6 +15,13 @@
       <Commands>
         <Button id="EPC_DataPAL_Button1" class="Button1" message="Tool for searching EPC's data catalog and adding layers to table of contents in ArcMap." caption="EPC DataPal v1.0" tip="Click Here to Launch DataPAL" category="EPC Add-Ins" image="Images\layersIcon.png" />
       </Commands>
+      <Toolbars>
+        <Toolbar id="EPC_DataPAL_EPC_Tools" caption="EPC Tools" showInitially="true">
+          <Items>
+            <Button refID="EPC_DataPAL_Button1" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
     </ArcMap>
   </AddIn>
 </ESRI.Configuration>
