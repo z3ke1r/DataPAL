@@ -195,7 +195,8 @@ namespace DataPAL
 
                 foreach (string item in stringList)
                 {
-                    if (item.Contains(itemChecked.ToString()))
+                    string itemName = Path.GetFileNameWithoutExtension(item);
+                    if (itemName.Equals(itemChecked.ToString()))
                         chkdLayers.Add(@item);
                 }
 
